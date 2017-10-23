@@ -2,7 +2,7 @@ test:
    override:
      - exit 0
 development:
-   staing:
+   staging:
     branch: master
     codedeploy:
       DemoApplication:
