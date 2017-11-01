@@ -8,6 +8,6 @@ echo "aws cli setting"
 
 echo ${AWS_ACCESS_KEY_ID}
 echo ${AWS_SECRET_ACCESS_KEY}
-echo ${AWS_SECRET_ACCESS_KEY}
+echo ${AWS_DEFALUT_REGION}
 
 aws s3 ls
