@@ -6,22 +6,12 @@ dependencies:
     - sudo pip install awscli
   override:
   post:
-development:
-   staging:
-    branch: master
-    commands:
-      - sh s3test.sh
-    codedeploy:
-      DemoApplication:
-        application_root: /
-        region: ap-northeast-1
-        revision_location:
-          revision_type: S3
-          s3_location:
-            bucket: tnagata-circleci
-            key_pattern: DemoApplication-{BRANCH}-{SHORT_COMMIT}
-          development_group: DemoFleet
-          development_config: CodeDeployDefault.AllAtOnce
 test:
    override:
      - echo "circle ci test"
+development:
+   development:
+    branch: master
+    commands:
+      - sh s3test.sh
+      
