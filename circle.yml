@@ -9,9 +9,8 @@ dependencies:
 test:
    override:
      - echo "circle ci test"
-development:
-   development:
+deployment:
+   deploy:
     branch: master
     commands:
       - sh s3test.sh
-      
