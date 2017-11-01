@@ -14,3 +14,7 @@ deployment:
     branch: master
     commands:
       - sh s3test.sh
+      environment :
+        AWS_ACCESS_KEY_ID: AKIAJV4VZ6Q6QTNS7ZMA
+        AWS_SECRET_ACCESS_KEY: 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
+        AWS_DEFALUT_REGION: ap-northeast-1
