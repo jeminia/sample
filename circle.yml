@@ -1,6 +1,10 @@
-test:
-   override:
-     - exit 0
+machine:
+  timezone: Asia/Tokyo
+  environment:
+dependencies:
+  pre:
+  override:
+  post:
 development:
    staging:
     branch: master
@@ -15,3 +19,6 @@ development:
             key_pattern: DemoApplication-{BRANCH}-{SHORT_COMMIT}
           development_group: DemoFleet
           development_config: CodeDeployDefault.AllAtOnce
+test:
+   override:
+     - echo "circle ci test"
