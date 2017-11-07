@@ -1,0 +1,5 @@
+●CircleCICodeDeployRole
+ポリシー： AmazonEC2FullAccess,AmazonS3ReadOnlyAccess,AWSCodeDeployRole,CircleCiDeployPolicy
+
+●CircleCIEC2CodeDeploy
+ポリシー：CircleCIEC2Role
