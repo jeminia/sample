@@ -10,7 +10,7 @@
                 "codedeploy:GetApplicationRevision"
             ],
             "Resource": [
-                "arn:aws:codedeploy:ap-northeast-1:535689148114:application:test-app"
+                "arn:aws:codedeploy:ap-northeast-1:awsアカウントID:application:test-app"
             ]
         },
         {
@@ -20,7 +20,7 @@
                 "codedeploy:GetDeployment"
             ],
             "Resource": [
-                "arn:aws:codedeploy:ap-northeast-1:535689148114:deploymentgroup:test-deploy-group/*"
+                "arn:aws:codedeploy:ap-northeast-1:awsアカウントID:deploymentgroup:test-deploy-group/*"
             ]
         },
         {
@@ -29,9 +29,9 @@
                 "codedeploy:GetDeploymentConfig"
             ],
             "Resource": [
-                "arn:aws:codedeploy:ap-northeast-1:535689148114:deploymentconfig:CodeDeployDefault.OneAtATime",
-                "arn:aws:codedeploy:ap-northeast-1:535689148114:deploymentconfig:CodeDeployDefault.HalfAtATime",
-                "arn:aws:codedeploy:ap-northeast-1:535689148114:deploymentconfig:CodeDeployDefault.AllAtOnce"
+                "arn:aws:codedeploy:ap-northeast-1:awsアカウントID:deploymentconfig:CodeDeployDefault.OneAtATime",
+                "arn:aws:codedeploy:ap-northeast-1:awsアカウントID:deploymentconfig:CodeDeployDefault.HalfAtATime",
+                "arn:aws:codedeploy:ap-northeast-1:awsアカウントID:deploymentconfig:CodeDeployDefault.AllAtOnce"
             ]
         }
     ]
