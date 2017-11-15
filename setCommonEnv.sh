@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export EC2_INSTANCE_COUNT=2
+export EC2_TASK_COUNT=4
+export AURORA_READ_REPLICA=1
+export ELASTICACHE_SHADE=3
