@@ -1,7 +1,7 @@
 machine:
   timezone: Asia/Tokyo
-  environment:
-    EC2_INSTANCE_COUNT: 1
+  #environment:
+  #  EC2_INSTANCE_COUNT: 1
 dependencies:
   pre:
     - sudo pip install awscli
@@ -11,10 +11,14 @@ dependencies:
   post:
 test:
    pre:
-     - sh ecsup.sh ${EC2_INSTANCE_COUNT}
+     #- sh ecsup.sh ${EC2_INSTANCE_COUNT}
+     - sh setCommonEnv.sh
    override:
      - echo "circle ci test"
    post:
+     - sh setCommonEnv.sh ${EC2_INSTANCE_COUNT}
+     environment:
+       EC2_INSTANCE_COUNT: 10
 deployment:
    staging:
     branch: master
